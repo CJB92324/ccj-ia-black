@@ -60,7 +60,12 @@ document.addEventListener('keydown', (event) => {
 		if (currentState === 'info') {
 			setScreen('stroop');
 		} else if (currentState === 'stroop') {
-			setScreen('ready');
+			if (currentWord === words.length) {
+				currentWord = 0;
+				setScreen('info');
+			} else {
+				setScreen('ready');
+			}
 		} else if (currentState === 'ready') {
 			setScreen('stroop');
 		}
