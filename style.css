@@ -18,14 +18,21 @@ body {
 	font-weight: bold;
 }
 
-#info-screen, #ready-screen {
+#info-screen {
 	max-width: 600px;
 }
 
-#info-screen h1, #ready-screen h1 {
+#info-screen h1 {
 	font-size: 2.5rem;
 }
 
-#info-screen p, #ready-screen p {
+#info-screen p{
+	font-size: 1.2rem;
+}
+#info-screen-2 {
+	max-width: 600px;
+}
+
+#info-screen-2 p {
 	font-size: 1.2rem;
 }
